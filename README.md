@@ -14,7 +14,7 @@ cargo build --release
 Run the tool with the following options:
 
 ```
-crypto_file_toolkit [OPTIONS] --file <FILE> --key <KEY> --output <OUTPUT>
+target\debug\crypto_file_toolkit.exe [OPTIONS] --file <FILE> --key <KEY> --output <OUTPUT>
 ```
 
 ## Options
@@ -41,25 +41,25 @@ crypto_file_toolkit [OPTIONS] --file <FILE> --key <KEY> --output <OUTPUT>
 ### Encrypt a file
 
 ```sh
-crypto_file_toolkit --encrypt --file input.txt --key mypassword --output encrypted.bin
+target\debug\crypto_file_toolkit --encrypt --file input.txt --key mypassword --output encrypted.bin
 ```
 
 or using short options:
 
 ```sh
-crypto_file_toolkit -e --file input.txt --key mypassword -o encrypted.bin
+target\debug\crypto_file_toolkit -e --file input.txt --key mypassword -o encrypted.bin
 ```
 
 ### Decrypt a file
 
 ```sh
-crypto_file_toolkit --decrypt --file encrypted.bin --key mypassword --output decrypted.txt
+target\debug\crypto_file_toolkit --decrypt --file encrypted.bin --key mypassword --output decrypted.txt
 ```
 
 or using short options:
 
 ```sh
-crypto_file_toolkit -d --file encrypted.bin --key mypassword -o decrypted.txt
+target\debug\crypto_file_toolkit -d --file encrypted.bin --key mypassword -o decrypted.txt
 ```
 
 ## Help
