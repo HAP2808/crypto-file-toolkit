@@ -1,0 +1,12 @@
+[package]
+name = "crypto_file_toolkit"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "*", features = ["derive"] }
+aes-gcm = "0.10"
+rand = "*"
+base64 = "*"
+pbkdf2 = "*"
+sha2 = "*"
